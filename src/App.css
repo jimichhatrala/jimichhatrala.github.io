@@ -13,6 +13,10 @@
 
   --hue: 0;
   --sat: 0%;
+  /* --title-color: skyblue; */
+  /* --title-color-dark: green; */
+  /* --text-color: crimson; */
+  /* --body-color: yellow; */
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
@@ -179,7 +183,7 @@ img {
   margin-left: var(--mb-0-5);
 }
 
-.button__flex {
+.button--flex {
   display: inline-flex;
   align-items: center;
 }
@@ -187,6 +191,10 @@ img {
 
 /* For large devices */
 @media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
 }
 
 /* For medium devices */
@@ -195,7 +203,13 @@ img {
 
 @media screen and (max-width: 576px) {
 }
+
+/* For small devices */
 @media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 }
 
 /* ==================================  ======================================  */
