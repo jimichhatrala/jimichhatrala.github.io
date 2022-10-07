@@ -4,7 +4,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        Hey, I'm Jimi <span class="wave-1">👋</span>
+        Hey, I'm Jimi <span class="wave-1 ">👋</span>
       </h1>
       <h3 className="home__subtitle">Full Stack Software Engineer</h3>
       <p className="home__description">

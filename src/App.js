@@ -5,7 +5,7 @@ import Home from "./components/home/Home";
 function App() {
   return (
     <>
-      <Header />;
+      <Header />
       <main className="main">
         <Home />
       </main>
