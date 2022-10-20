@@ -5,6 +5,7 @@
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  transition: all 0.3s ease;
 }
 
 .nav {
@@ -50,6 +51,15 @@
   /* color: red; */
 }
 
+/* Change background header */
+.show-header {
+  background-color: #61dbfb;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* ============================================ BREAKPOINTS ============================================ */
 /* For medium devices */
 @media screen and (max-width: 768px) {
   .header {

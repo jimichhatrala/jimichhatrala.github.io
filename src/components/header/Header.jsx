@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import "./header.css";
 
 const Header = () => {
+  /* ================================== Change Background Header ======================================  */
+
+  window.addEventListener("scroll", function () {
+    const header = this.document.querySelector(".header");
+
+    // when the scroll is higher than 200 viewport height, add the show-header class to a tag with the header tag
+
+    if (this.scrollY >= 80) header.classList.add("show-header");
+    else header.classList.remove("show-header");
+  });
   /* ================================== Toggle Menu ======================================  */
 
   const [Toggle, showMenu] = useState(false);
