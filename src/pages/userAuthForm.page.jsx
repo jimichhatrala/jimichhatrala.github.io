@@ -19,9 +19,16 @@ const UserAuthForm = ({ type }) => {
 
   console.log(access_token);
 
+  axios.defaults.withCredentials = true;
+
   const userAuthThroughServer = (serverRoute, formData) => {
     axios
-      .post(import.meta.env.VITE_SERVER_DOMAIN + serverRoute, formData)
+      .post(import.meta.env.VITE_SERVER_DOMAIN + serverRoute, formData, {
+        withCredentials: true, // This is the key part
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
       .then(({ data }) => {
         storeInSession("user", JSON.stringify(data));
         // console.log(sessionStorage);

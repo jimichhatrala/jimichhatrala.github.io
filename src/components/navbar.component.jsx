@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <Link to="/mern-blogging-website-frontend/" className="flex-none w-10">
+        <Link to="/" className="flex-none w-10">
           <img src={logo} alt="Logo" className="w-full" />
         </Link>
 
@@ -80,10 +80,10 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link className="btn-dark py-2" to={"signin"}>
+              <Link className="btn-dark py-2" to={"/signin"}>
                 Sign In
               </Link>
-              <Link className="btn-light py-2 hidden md:block" to={"signup"}>
+              <Link className="btn-light py-2 hidden md:block" to={"/signup"}>
                 Sign Up
               </Link>
             </>
